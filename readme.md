@@ -12,7 +12,8 @@ We started brainstorming different ideas and began scripting our storyline.  Aft
 
 Once we had a basic idea of our storyline we moved to sketching out the comic strips physically on paper and figuring out the design and layout along with the floor of the comic. 
 
-
+![plot](./media/sketch1.png)
+![plot](./media/sketch2.png)
 
 
 
