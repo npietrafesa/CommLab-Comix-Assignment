@@ -1,0 +1,135 @@
+html{
+	scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+/* CSS Reset */
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+	font-family: 'Ubuntu', 'Trebuchet MS', Arial, Helvetica, sans-serif;
+}
+
+.panel{
+  display: flex;
+  max-width: 100%;
+  justify-content: center;
+}
+
+.panel img{
+  max-width: 90%;
+  max-height: 90%;   
+ }
+
+.panel1 {
+	display: none;
+}
+
+/* Landing Page */
+#svgContainer{
+	transition: 3s ease-in-out;
+}
+
+/* Lightbulb */
+path#bulb{
+    animation: flicker 5s linear 0s infinite alternate;
+}
+
+/* Lightbulb Animation */
+@keyframes flicker{
+    0%	{filter: drop-shadow(0 0 0px rgba(255,255,0, 50));}
+	20%	{filter: drop-shadow(0 0 0.8rem rgba(255,255,0, 50));}
+	58%	{filter: drop-shadow(0 0 0.8rem rgba(255,255,0, 50));}
+	60%	{filter: none;}
+	62%	{filter: drop-shadow(0 0 0.8rem rgba(255,255,0, 50));}
+	70%	{filter: none;}
+	72%	{filter: drop-shadow(0 0 0.8rem rgba(255,255,0, 50));}
+	100%	{filter: drop-shadow(0 0 0.8rem rgba(255,255,0, 50));}
+}
+
+/* Screen Glow */
+path#screen{
+	filter: drop-shadow(0 0 1rem rgba(171,210,220, 50));
+}
+
+/* Received Messages*/
+.received{
+    position: relative;
+    background-color: lightgrey;
+    color: black;
+    margin-left: 15%;
+    max-width: 50%;
+    width: fit-content;
+    height: auto;
+    overflow-wrap: break-word;
+    border-radius: 20px;
+	font-size: 2em;
+}
+
+/* Sent Messages */
+.sent{
+    position: relative;
+    background-color: cornflowerblue;
+    color: white;
+    margin-left: 45%;
+    max-width: 50%;
+    width: fit-content;
+    height: auto;
+    overflow-wrap: break-word;
+    border-radius: 20px;
+	font-size: 2em;
+}
+
+/* Expressions */
+.expression img{
+  display: block;
+  max-width: 70%;
+  max-height: 70%;
+  
+}
+
+.continue{
+  background-color: black; 
+}
+
+/* Paragraph */
+p{    
+    padding: 5%;
+    font-size: 1.2em;
+}
+
+/* Headings */
+h1{
+    text-align: center;
+    margin-bottom: 15%;
+}
+
+h2{
+    text-align: center;
+}
+
+/* Scroll Message */
+.scroll {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	font-size: 30px;
+	font: sans-serif;
+	position: absolute;
+	top: 2%;
+	margin: auto;
+	color: white;
+}
+
+.panel1 {
+	padding-top: 1%;
+}
+
+#footer{
+  padding: 1%;
+  background-color: #222222;
+  color: #ffffff;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="scamstyle.css">
+</head>
+<body>
+<div class="original" id="original">
+    <h1>You're almost done!</h1>
+    <p>Just fill out your credit card information to transfer the money!</p>
+    <form>
+        <label for="ccn">Credit Card Number:</label><br>
+        <input type="text" id="ccn" name="ccn" value=""><br>
+        <label for="exp">Expiry:</label><br>
+        <input type="text" id="exp" name="exp" value=""><br>
+        <label for="cvv">CVV:</label><br>
+        <input type="text" id="cvv" name="cvv" value=""><br><br>
+        <button type="button" onclick="scammed()">Submit</button>
+    </form>
+</div>
+
+<script>
+    function scammed() {
+        if (confirm("Click OK to go back to previous window") == true) {
+        setTimeout("window.close();", 4000);
+      };
+    };
+</script>
+
+</body>
+</html>
